@@ -1,0 +1,50 @@
+Dataset statistics calculated while downloading dataset
+Last step truncated (last timestep of the data truncated generally for v0 because there is no next_observation) 
+
+env: pen-expert-v0
+Number of samples collected: 499999
+Trajectory returns: mean = 3333.356689453125, std = 1761.411865234375, max = 5383.4140625, min = -218.00030517578125
+
+env: pen-cloned-v0
+Number of samples collected: 499999
+Trajectory returns: mean = 2018.5671379584232, std = 2323.9511972542937, max = 6096.043075561523, min = -98.1524640354733
+
+env: pen-human-v0
+Number of samples collected: 4999
+Trajectory returns: mean = 3161.93408203125, std = 2468.4248046875, max = 6096.0439453125, min = 41.74394989013672
+
+env: hammer-expert-v0
+Number of samples collected: 999999
+Trajectory returns: mean = 12355.4619140625, std = 6348.77880859375, max = 17168.763671875, min = -275.91546630859375
+
+env: hammer-cloned-v0
+Number of samples collected: 999999
+Trajectory returns: mean = 505.2614229349699, std = 1820.6909388554554, max = 9570.416120767593, min = -260.24013566970825
+
+env: hammer-human-v0
+Number of samples collected: 11309
+Trajectory returns: mean = 1095.36767578125, std = 2281.5234375, max = 9570.416015625, min = -260.2401428222656
+
+env: door-expert-v0
+Number of samples collected: 999999
+Trajectory returns: mean = 2919.310302734375, std = 418.86248779296875, max = 3131.401123046875, min = -55.407073974609375
+
+env: door-cloned-v0
+Number of samples collected: 999999
+Trajectory returns: mean = 214.85045799876963, std = 343.66810333196815, max = 1136.837553024292, min = -60.68874309829196
+
+env: door-human-v0
+Number of samples collected: 6728
+Trajectory returns: mean = 397.4285888671875, std = 338.80352783203125, max = 1136.8375244140625, min = -51.026405334472656
+
+env: relocate-expert-v0
+Number of samples collected: 999999
+Trajectory returns: mean = 4322.82177734375, std = 838.3673095703125, max = 5236.962890625, min = -13.313029289245605
+
+env: relocate-cloned-v0
+Number of samples collected: 999999
+Trajectory returns: mean = 829.5815076787284, std = 1395.8260759670723, max = 4713.180918633938, min = -21.950507557005587
+
+env: relocate-human-v0
+Number of samples collected: 9941
+Trajectory returns: mean = 1530.3468017578125, std = 1572.525634765625, max = 4713.1806640625, min = -6.611824035644531

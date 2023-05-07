@@ -51,7 +51,7 @@ class DecisionTransformer(TrajectoryModel):
         )
         self.predict_return = torch.nn.Linear(hidden_size, 1)
 
-    def forward(self, states, actions, rewards, returns_to_go, timesteps, attention_mask=None):
+    def forward(self, states, actions, returns_to_go, timesteps, rewards=None, attention_mask=None):
 
         batch_size, seq_length = states.shape[0], states.shape[1]
 
@@ -69,6 +69,7 @@ class DecisionTransformer(TrajectoryModel):
         state_embeddings = state_embeddings + time_embeddings
         action_embeddings = action_embeddings + time_embeddings
         returns_embeddings = returns_embeddings + time_embeddings
+
 
         # this makes the sequence look like (R_1, s_1, a_1, R_2, s_2, a_2, ...)
         # which works nice in an autoregressive sense since states predict actions

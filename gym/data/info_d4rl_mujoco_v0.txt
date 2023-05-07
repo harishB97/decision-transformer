@@ -1,0 +1,38 @@
+Dataset statistics calculated while downloading dataset. 
+Last step not truncated (last timestep of the data truncated generally for v0 because there is no next_observation) 
+
+env: halfcheetah-medium-v0
+Number of samples collected: 999899
+Trajectory returns: mean = 3948.766845703125, std = 481.09100341796875, max = 4368.9521484375, min = 888.3602905273438
+
+env: halfcheetah-medium-replay-v0
+Number of samples collected: 101000
+Trajectory returns: mean = 2300.602783203125, std = 1890.0013427734375, max = 4834.1923828125, min = -420.8208312988281
+
+env: halfcheetah-expert-v0
+Number of samples collected: 999996
+Trajectory returns: mean = 12184.509765625, std = 1056.4400634765625, max = 12898.779296875, min = 1984.251220703125
+
+env: hopper-medium-v0
+Number of samples collected: 1000000
+Trajectory returns: mean = 1021.7492065429688, std = 313.51580810546875, max = 3254.32080078125, min = 26.500652313232422
+
+env: hopper-medium-replay-v0
+Number of samples collected: 200919
+Trajectory returns: mean = 470.5174560546875, std = 274.3703308105469, max = 1377.90234375, min = 5.9121599197387695
+
+env: hopper-expert-v0
+Number of samples collected: 999552
+Trajectory returns: mean = 3525.2470703125, std = 421.358154296875, max = 3759.545166015625, min = 1008.1423950195312
+
+env: walker2d-medium-v0
+Number of samples collected: 1000000
+Trajectory returns: mean = 498.3694763183594, std = 806.8345947265625, max = 3752.72607421875, min = -7.74596643447876
+
+env: walker2d-medium-replay-v0
+Number of samples collected: 100930
+Trajectory returns: mean = 358.44140625, std = 290.5961608886719, max = 1956.506103515625, min = -43.812828063964844
+
+env: walker2d-expert-v0
+Number of samples collected: 999663
+Trajectory returns: mean = 2904.42431640625, std = 2009.0115966796875, max = 5407.9306640625, min = -71.91669464111328
