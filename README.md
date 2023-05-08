@@ -2,6 +2,8 @@
 
 This repo contains code for the preliminary analysis of the suitability of decision transformers for near real world applications.
 
+The experiments done on NeoRL (Near Real World RL) datasets and the adroit robotic hand tasks can be found in the notebook "dt_real_world_experiments.ipynb" inside gym folder
+
 # Decision Transformer
 
 Lili Chen\*, Kevin Lu\*, Aravind Rajeswaran, Kimin Lee, Aditya Grover, Michael Laskin, Pieter Abbeel, Aravind Srinivas†, and Igor Mordatch†
