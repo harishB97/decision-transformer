@@ -1,3 +1,6 @@
+# Can Transformers Solve Real-World Reinforcement Learning Problems?
+
+This repo contains code for the preliminary analysis of the suitability of decision transformers for near real world applications.
 
 # Decision Transformer
 
