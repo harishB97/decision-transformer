@@ -1,7 +1,9 @@
 import gym
 import numpy as np
 import torch
+from torch._C import _valgrind_toggle_and_dump_stats
 import wandb
+import neorl
 
 import argparse
 import pickle
@@ -56,6 +58,21 @@ def experiment(
         max_ep_len = 100
         env_targets = [76, 40]
         scale = 10.
+    elif env_name == 'neorl-hopper':
+        env = neorl.make('Hopper-v3')
+        max_ep_len = 1000
+        env_targets = [3600, 1800]  # evaluation conditioning targets
+        scale = 1000.  # normalization for rewards/returns
+    elif env_name == 'neorl-halfcheetah':
+        env = neorl.make('HalfCheetah-v3')
+        max_ep_len = 1000
+        env_targets = [12000, 6000]
+        scale = 1000.
+    elif env_name == 'neorl-walker2d':
+        env = neorl.make('Walker2d-v3')
+        max_ep_len = 1000
+        env_targets = [5000, 2500]
+        scale = 1000.
     else:
         raise NotImplementedError
 
@@ -66,7 +83,8 @@ def experiment(
     act_dim = env.action_space.shape[0]
 
     # load dataset
-    dataset_path = f'data/{env_name}-{dataset}-v2.pkl'
+    # dataset_path = f'data/{env_name}-{dataset}-v2.pkl'
+    dataset_path = variant['dataset_path']
     with open(dataset_path, 'rb') as f:
         trajectories = pickle.load(f)
 
@@ -282,8 +300,10 @@ def experiment(
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
+    parser.add_argument('--exp', type=str, default='gym-experiment')
     parser.add_argument('--env', type=str, default='hopper')
     parser.add_argument('--dataset', type=str, default='medium')  # medium, medium-replay, medium-expert, expert
+    parser.add_argument('--dataset_path', type=str, default='')  # medium, medium-replay, medium-expert, expert
     parser.add_argument('--mode', type=str, default='normal')  # normal for standard setting, delayed for sparse
     parser.add_argument('--K', type=int, default=20)
     parser.add_argument('--pct_traj', type=float, default=1.)
@@ -304,5 +324,7 @@ if __name__ == '__main__':
     parser.add_argument('--log_to_wandb', '-w', type=bool, default=False)
     
     args = parser.parse_args()
-
-    experiment('gym-experiment', variant=vars(args))
+    variant=vars(args)
+    print(_valgrind_toggle_and_dump_stats)
+    exp_name=variant['exp']
+    experiment('gym-experiment', variant=variant)

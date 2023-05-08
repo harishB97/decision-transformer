@@ -6,6 +6,7 @@ import pickle
 
 import d4rl
 
+import os
 
 datasets = []
 
@@ -43,8 +44,12 @@ for env_name in ['halfcheetah', 'hopper', 'walker2d']:
 
 		returns = np.array([np.sum(p['rewards']) for p in paths])
 		num_samples = np.sum([p['rewards'].shape[0] for p in paths])
+		print('env:', name)
 		print(f'Number of samples collected: {num_samples}')
 		print(f'Trajectory returns: mean = {np.mean(returns)}, std = {np.std(returns)}, max = {np.max(returns)}, min = {np.min(returns)}')
 
-		with open(f'{name}.pkl', 'wb') as f:
+		save_dir = '/content/gdrive/Shareddrives/DRL/decision-transformer/gym/data/d4rl-mujoco-v0/'
+		os.makedirs(save_dir, exist_ok=True)
+		save_path = os.path.join(save_dir, f'{name}.pkl')
+		with open(save_path, 'wb') as f:
 			pickle.dump(paths, f)

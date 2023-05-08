@@ -1,0 +1,60 @@
+{
+    "os": "Linux-5.10.147+-x86_64-with-glibc2.31",
+    "python": "3.10.11",
+    "heartbeatAt": "2023-05-01T00:05:31.506550",
+    "startedAt": "2023-05-01T00:05:22.498727",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--exp",
+        "neorl-hopper",
+        "--env",
+        "neorl-hopper",
+        "--dataset_path",
+        "/content/gdrive/Shareddrives/DRL/decision-transformer/gym/data/offline-data/Hopper-v3-high-v3-10000_trajs.pkl",
+        "--dataset",
+        "high",
+        "--model_type",
+        "dt",
+        "--log_to_wandb",
+        "True"
+    ],
+    "state": "running",
+    "program": "/content/gdrive/Shareddrives/DRL/decision-transformer/gym/experiment.py",
+    "codePath": "gym/experiment.py",
+    "git": {
+        "remote": "git@github.com:harishB97/decision-transformer.git",
+        "commit": "72595e08cdcd0b5107c14d6985285c535b12922d"
+    },
+    "email": "harishbabu@vt.edu",
+    "root": "/content/gdrive/Shareddrives/DRL/decision-transformer",
+    "host": "a1516bf62451",
+    "username": "root",
+    "executable": "/usr/bin/python3",
+    "cpu_count": 1,
+    "cpu_count_logical": 2,
+    "cpu_freq": {
+        "current": 2199.998,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2199.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.998,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "total": 78.1898422241211,
+        "used": 41.59169006347656
+    },
+    "memory": {
+        "total": 12.681190490722656
+    }
+}

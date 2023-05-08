@@ -1,0 +1,26 @@
+2023-05-01 00:05:22,534 INFO    MainThread:28264 [wandb_setup.py:_flush():76] Configure stats pid to 28264
+2023-05-01 00:05:22,536 INFO    MainThread:28264 [wandb_setup.py:_flush():76] Loading settings from /root/.config/wandb/settings
+2023-05-01 00:05:22,536 INFO    MainThread:28264 [wandb_setup.py:_flush():76] Loading settings from /content/gdrive/Shareddrives/DRL/decision-transformer/gym/wandb/settings
+2023-05-01 00:05:22,537 INFO    MainThread:28264 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-05-01 00:05:22,537 INFO    MainThread:28264 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-05-01 00:05:22,537 INFO    MainThread:28264 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'gym/experiment.py', 'program': '/content/gdrive/Shareddrives/DRL/decision-transformer/gym/experiment.py'}
+2023-05-01 00:05:22,537 INFO    MainThread:28264 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2023-05-01 00:05:22,538 INFO    MainThread:28264 [wandb_init.py:_log_setup():507] Logging user logs to /content/gdrive/Shareddrives/DRL/decision-transformer/gym/wandb/run-20230501_000522-oh1rwm54/logs/debug.log
+2023-05-01 00:05:22,538 INFO    MainThread:28264 [wandb_init.py:_log_setup():508] Logging internal logs to /content/gdrive/Shareddrives/DRL/decision-transformer/gym/wandb/run-20230501_000522-oh1rwm54/logs/debug-internal.log
+2023-05-01 00:05:22,538 INFO    MainThread:28264 [wandb_init.py:init():547] calling init triggers
+2023-05-01 00:05:22,538 INFO    MainThread:28264 [wandb_init.py:init():554] wandb.init called with sweep_config: {}
+config: {'exp': 'neorl-hopper', 'env': 'neorl-hopper', 'dataset': 'high', 'dataset_path': '/content/gdrive/Shareddrives/DRL/decision-transformer/gym/data/offline-data/Hopper-v3-high-v3-10000_trajs.pkl', 'mode': 'normal', 'K': 20, 'pct_traj': 1.0, 'batch_size': 64, 'model_type': 'dt', 'embed_dim': 128, 'n_layer': 3, 'n_head': 1, 'activation_function': 'relu', 'dropout': 0.1, 'learning_rate': 0.0001, 'weight_decay': 0.0001, 'warmup_steps': 10000, 'num_eval_episodes': 100, 'max_iters': 10, 'num_steps_per_iter': 10000, 'device': 'cuda', 'log_to_wandb': True}
+2023-05-01 00:05:22,539 INFO    MainThread:28264 [wandb_init.py:init():595] starting backend
+2023-05-01 00:05:22,539 INFO    MainThread:28264 [wandb_init.py:init():599] setting up manager
+2023-05-01 00:05:22,544 INFO    MainThread:28264 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-05-01 00:05:22,557 INFO    MainThread:28264 [wandb_init.py:init():605] backend started and connected
+2023-05-01 00:05:22,559 INFO    MainThread:28264 [wandb_init.py:init():695] updated telemetry
+2023-05-01 00:05:30,715 INFO    MainThread:28264 [wandb_init.py:init():732] communicating run to backend with 60.0 second timeout
+2023-05-01 00:05:31,418 INFO    MainThread:28264 [wandb_run.py:_on_init():2176] communicating current version
+2023-05-01 00:05:31,450 INFO    MainThread:28264 [wandb_run.py:_on_init():2185] got version response 
+2023-05-01 00:05:31,451 INFO    MainThread:28264 [wandb_init.py:init():782] starting run threads in backend
+2023-05-01 00:05:31,582 INFO    MainThread:28264 [wandb_run.py:_console_start():2157] atexit reg
+2023-05-01 00:05:31,583 INFO    MainThread:28264 [wandb_run.py:_redirect():2012] redirect: SettingsConsole.WRAP_RAW
+2023-05-01 00:05:31,584 INFO    MainThread:28264 [wandb_run.py:_redirect():2077] Wrapping output streams.
+2023-05-01 00:05:31,584 INFO    MainThread:28264 [wandb_run.py:_redirect():2102] Redirects installed.
+2023-05-01 00:05:31,588 INFO    MainThread:28264 [wandb_init.py:init():824] run started, returning control to user process
